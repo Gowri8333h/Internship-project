@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Usage Tracker",
+  "version": "1.0",
+  "description": "Track browser usage time, search count, data usage, and network bandwidth availability.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "history",
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.jpg",
+      "48": "icon48.jpg",
+      "128": "icon128.jpg"
+    }
+  }
+}

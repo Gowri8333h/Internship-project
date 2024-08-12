@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 20px auto;
+            background-color: lightblue;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        p {
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        p:last-child {
+            border-bottom: none;
+        }
+        span {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        span.usage {
+            color: #e74c3c;
+        }
+        span.count {
+            color: #3498db;
+        }
+        span.data {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Usage Tracker</h1>
+        <p>Usage Time: <span id="usageTime"></span></p>
+        <p>Search Count: <span id="searchCount"></span></p>
+        <p>Data Usage: <span id="dataUsage"></span></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
